@@ -1,23 +1,17 @@
-package com.cpadilla.rickAndMorty.persistence.entity;
+package com.cpadilla.rickAndMorty.domain;
 
-import javax.persistence.*;
+public class CharacterDom {
 
-@Entity
-@Table(name = "character")
-public class CharacterEntity {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private int id;
     private String name;
     private String species;
     private String image;
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
