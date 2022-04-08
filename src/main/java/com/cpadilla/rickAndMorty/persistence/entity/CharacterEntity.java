@@ -1,6 +1,10 @@
 package com.cpadilla.rickAndMorty.persistence.entity;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "character")
@@ -12,6 +16,7 @@ public class CharacterEntity {
     private String name;
     private String species;
     private String image;
+    private String gender;
 
     public Integer getId() {
         return id;
@@ -43,5 +48,13 @@ public class CharacterEntity {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 }

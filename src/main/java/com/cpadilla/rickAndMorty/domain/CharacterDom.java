@@ -2,18 +2,19 @@ package com.cpadilla.rickAndMorty.domain;
 
 public class CharacterDom {
 
-    private int id;
+//    private int id;
     private String name;
     private String species;
+    private String gender;
     private String image;
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
+//    public int getId() {
+//        return id;
+//    }
+//
+//    public void setId(int id) {
+//        this.id = id;
+//    }
 
     public String getName() {
         return name;
@@ -37,5 +38,13 @@ public class CharacterDom {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 }

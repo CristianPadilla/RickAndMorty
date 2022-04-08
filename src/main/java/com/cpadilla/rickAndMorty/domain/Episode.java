@@ -1,12 +1,13 @@
 package com.cpadilla.rickAndMorty.domain;
 
+import javax.persistence.CascadeType;
 import java.util.List;
 
 public class Episode {
 
     private int episode;
     private String episodeName;
-    private List<EpisodeCharacter> characters;
+    private List<CharacterDom> characters;
 
     public int getEpisode() {
         return episode;
@@ -24,11 +25,11 @@ public class Episode {
         this.episodeName = episodeName;
     }
 
-    public List<EpisodeCharacter> getCharacters() {
+    public List<CharacterDom> getCharacters() {
         return characters;
     }
 
-    public void setCharacters(List<EpisodeCharacter> characters) {
+    public void setCharacters(List<CharacterDom> characters) {
         this.characters = characters;
     }
 }

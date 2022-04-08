@@ -8,7 +8,7 @@ import org.mapstruct.Mappings;
 
 import java.util.List;
 
-@Mapper(componentModel = "spring", uses = {EpisodeCharacterMapper.class})
+@Mapper(componentModel = "spring", uses = {CharacterMapper.class})
 public interface EpisodeMapper {
 
     @Mappings({
