@@ -1,0 +1,1 @@
+web: java -jar -Dspring.profiles.active=pdn build/libs/rickAndMorty-1.0.jar
